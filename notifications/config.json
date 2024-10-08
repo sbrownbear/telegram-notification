@@ -7,13 +7,13 @@
     "reportLink": "https://jenkins.autotests.cloud",
     "language": "ru",
     "allureFolder": "build/allure-report/",
-    "enableChart": false,
-    "enableSuitesPublishing": false,
+    "enableChart": true,
+    "enableSuitesPublishing": true,
     "customData": {}
   },
   "telegram": {
-    "token": "",
-    "chat": "",
+    "token": "7649792981:AAFVgWXeSuR9KoQMvn0aJJJQdvMo723vLBI",
+    "chat": "-1002397758059",
     "replyTo": "",
     "templatePath": "/templates/telegram.ftl"
   }
