@@ -1,0 +1,15 @@
+1. Создать телегра бот с помощью @BotFather
+    @sergey_k_notifications_bot
+2. Взять token
+    7649792981:AAFVgWXeSuR9KoQMvn0aJJJQdvMo723vLBI
+3. Создать группу, добавить бота в чат, сделать его админом и написать в чат
+4. Ввести в адресную строку https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/getUpdates и взять id чата.
+5. Добавить в команду id чата и токен. Ввести в git bash команду. Должно прийти сообщение от бота.
+curl -X POST  -H 'Content-Type: application/json'  -d '{"chat_id": "-1002397758059", "text": "This is a test from curl", "disable_notification": true}'  https://api.telegram.org/bot7649792981:AAFVgWXeSuR9KoQMvn0aJJJQdvMo723vLBI/sendMessage
+6. Скачать allure-notifications.jar с репозитория https://github.com/qa-guru/allure-notifications/releases в папку notifications
+7. Создать файл config.json в папке notifications и добавить инфу
+
+
+curl -X POST  -H 'Content-Type: application/json'  -d '{"chat_id": "-1002397758059", "text": "This is a test from curl", "disable_notification": true}'  https://api.telegram.org/bot7649792981:AAFVgWXeSuR9KoQMvn0aJJJQdvMo723vLBI/sendMessage
+
+java "-DconfigFile=notifications/config.json" -jar notifications/allure-notifications-4.2.1.jar

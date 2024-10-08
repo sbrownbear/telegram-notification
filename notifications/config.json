@@ -1,0 +1,20 @@
+{
+  "base": {
+    "logo": "",
+    "project": "The best project",
+    "environment": "qa.guru",
+    "comment": "Some comment here, @s_brown_bear",
+    "reportLink": "https://jenkins.autotests.cloud",
+    "language": "ru",
+    "allureFolder": "build/allure-report/",
+    "enableChart": false,
+    "enableSuitesPublishing": false,
+    "customData": {}
+  },
+  "telegram": {
+    "token": "",
+    "chat": "",
+    "replyTo": "",
+    "templatePath": "/templates/telegram.ftl"
+  }
+}
